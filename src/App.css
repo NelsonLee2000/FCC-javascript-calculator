@@ -1,0 +1,98 @@
+.calculator {
+  background-color:rgb(67, 67, 166);
+  margin:auto;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px ;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px ;
+  width:400px;
+  height:600px;
+  border: 10px solid rgb(67, 67, 166);
+  border-radius: 5px;
+}
+
+#maintitle{
+  display:flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 2em;
+  font-weight:bolder;
+  background-color: rgb(105, 105, 91);
+  color:white
+}
+
+#multiply, #divide, #subtract, #add {
+  background-color: grey;
+}
+
+
+
+#highdisplay {
+  grid-area: 1 / 1 / 2 / 5;
+  margin:0;
+  font-size:1.5em;
+}
+
+#lowdisplay {
+  grid-area: 2 / 1 / 3 / 5;
+  margin:0;
+  font-size:2em;
+  display:flex;
+  align-items:flex-start;
+  padding-top:0px;
+}
+
+#clear {
+  grid-area: 3 / 1 / 5 / 3;
+  background-color: rgb(173, 77, 77);
+}
+
+#divide {
+  grid-area: 3 / 3 / 5 / 4;
+}
+
+#multiply {
+  grid-area: 3 / 4 / 5 / 5;
+}
+
+#subtract {
+  grid-area: 5 / 4 / 7 / 5;
+}
+
+#add {
+  grid-area: 7 / 4 / 9 / 5;
+}
+
+#equals {
+  grid-area: 9 / 4 / 13 / 5;
+  background-color: rgb(59, 59, 109)
+}
+
+#zero {
+  grid-area: 11 / 1 / 13 / 3;
+}
+
+#decimal {
+  grid-area: 11 / 3 / 13 / 4;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+/*<div className="calculator">
+      <h3 id="highdisplay">{upper}</h3>
+      <h2 id = "lowdisplay">{lower}</h2>
+      <button onClick = {resetStateBoth} id="clear">AC</button>
+      <button id = "add" onClick={handleClickAdd}>+</button>
+      <button id = "subtract" onClick={handleClickSubtract} >-</button>
+      <button id = "multiply" onClick={handleClickMultiply}>x</button>
+      <button id = "divide" onClick={handleClickDivide}>/</button>
+        {numberButtons.map((nums) => (
+          <Digit numberButtons={nums} key={nums.num} />
+        ))}
+      <button id = "decimal" onClick={handleClickDecimal}>.</button>
+      <button id = "equals" onClick={handleClickEquals}>=</button>
+      </div>/*

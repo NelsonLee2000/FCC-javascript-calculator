@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { NumberButtons } from './types'
-import { create, all,} from 'mathjs';
+import { create, all,} from 'mathjs'
 
 const numberButtons: NumberButtons[] = [
   {
@@ -191,7 +191,7 @@ function App() {
   
   return (
     <>
-    <h1 id="maintitle">Nelson's Calculator</h1>
+    <h1 id="maintitle">Nelson's Calculator App</h1>
     <div className="calculator">
       <h3 id="highdisplay">{upper}</h3>
       <h2 id = "lowdisplay">{lower}</h2>

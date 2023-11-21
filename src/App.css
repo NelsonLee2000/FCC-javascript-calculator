@@ -81,18 +81,3 @@ button {
   grid-row: span 2;
   grid-column: span 1;
 }
-
-/*<div className="calculator">
-      <h3 id="highdisplay">{upper}</h3>
-      <h2 id = "lowdisplay">{lower}</h2>
-      <button onClick = {resetStateBoth} id="clear">AC</button>
-      <button id = "add" onClick={handleClickAdd}>+</button>
-      <button id = "subtract" onClick={handleClickSubtract} >-</button>
-      <button id = "multiply" onClick={handleClickMultiply}>x</button>
-      <button id = "divide" onClick={handleClickDivide}>/</button>
-        {numberButtons.map((nums) => (
-          <Digit numberButtons={nums} key={nums.num} />
-        ))}
-      <button id = "decimal" onClick={handleClickDecimal}>.</button>
-      <button id = "equals" onClick={handleClickEquals}>=</button>
-      </div>/*
